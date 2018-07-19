@@ -1,0 +1,11 @@
+<mat-toolbar color="primary">
+  <button mat-button routerLinkActive="active" routerLink="/"><mat-icon>home</mat-icon>Message Board</button>
+<button mat-button routerLinkActive="active" routerLink="/messages"><mat-icon>message</mat-icon>Messages</button>
+<span style="flex: 1 1 auto"></span>
+  <button mat-button routerLinkActive="active" *ngIf="!auth.isAuthenticated" routerLink="/login"><mat-icon>vpn_key</mat-icon>Login</button>
+<button mat-button routerLinkActive="active" *ngIf="!auth.isAuthenticated" routerLink="/register">
+<mat-icon>accessible</mat-icon>
+  Register</button>
+<button mat-button routerLinkActive="active" *ngIf="auth.isAuthenticated" routerLink="/profile"><mat-icon>account_box</mat-icon>Welcome {{auth.name}}</button>
+<button mat-button routerLinkActive="active" *ngIf="auth.isAuthenticated" (click)="onLogout()"><mat-icon>input</mat-icon>Logout</button>
+</mat-toolbar>

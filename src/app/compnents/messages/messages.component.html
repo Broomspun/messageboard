@@ -1,0 +1,6 @@
+<div *ngFor="let message of messages">
+  <mat-card>
+    <mat-card-title [routerLink]="['/messages', message.owner]">{{message.owner}}</mat-card-title>
+    <mat-card-content>{{message.text}}</mat-card-content>
+  </mat-card>
+</div>

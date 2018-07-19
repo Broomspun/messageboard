@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,qDAAsD;EACpD,OAAO,EAAE,YAAW;EACpB,OAAO,EAAE,gBAAe",
+"sources": ["nabvar.component.scss"],
+"names": [],
+"file": "nabvar.component.css"
+}
