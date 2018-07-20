@@ -33,6 +33,7 @@ export class MessagesComponent implements OnInit {
       .subscribe(
         (res) => {
           this.messages = res;
+          console.log(`${JSON.stringify(res)}`);
         }
       );
   }
